@@ -1,0 +1,16 @@
+package day5;
+
+class StudentTeacher implements Student, Teacher{
+	public void study() { // 여기서는 public 써줘야 한다.
+		System.out.println("학생 - 공부하다");
+	}
+}
+
+public class InterfaceTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

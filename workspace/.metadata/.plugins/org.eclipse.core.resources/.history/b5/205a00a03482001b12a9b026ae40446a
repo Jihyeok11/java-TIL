@@ -1,0 +1,17 @@
+package edu;
+
+abstract class Shape{
+	abstract void area(); // 얘는 무조건 상속해야 한다
+	void tell() {
+		
+	}
+}
+
+public class AbstractTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

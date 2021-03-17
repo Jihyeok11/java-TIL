@@ -1,0 +1,11 @@
+package day4;
+
+public class OverloadTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1 = "100";
+		int dec = Integer.parseInt(s1);
+	}
+
+}

@@ -1,0 +1,21 @@
+package day3;
+
+class Test{
+	int ma(){
+		int i = 10;
+		return i*i; // ma() 값으로 i*i 결과를 되돌려줌
+	}
+	mb() {
+		String s = "java";
+		return s.toUpperCase()
+	}
+}
+public class ReturnTypeTest {
+
+	public static void main(String[] args) {
+		Test t = new Test(); // 다른 class에 있으므로 선언 필요
+		int r1 = t.ma();
+		System.out.println(r1);
+	}
+
+}

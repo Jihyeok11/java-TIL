@@ -1,0 +1,16 @@
+package day3;
+
+class Test{
+	? ma(){
+		int i = 10;
+		return i*i; // ma() 값으로 i*i 결과를 되돌려줌
+	}
+}
+public class ReturnTypeTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

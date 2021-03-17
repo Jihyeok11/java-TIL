@@ -1,0 +1,18 @@
+package day3;
+
+
+// 지금까지 클래스 1개만 다뤘는데 여러개 사용 가능
+// public은 java로 선언한 클래스명에 붙여준다.
+// main는 메소드를 가진 클래스명.java
+class Employee{
+	// 사번 이름 직급 부서 변수
+	String id = "100-12345";
+}
+public class EmployeeTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

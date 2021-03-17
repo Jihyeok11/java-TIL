@@ -1,0 +1,22 @@
+package edu;
+
+abstract class Shape{
+	abstract void area(); // 얘는 무조건 상속해야 한다. 메소드를 쓸거면 클래스에도 abstract를 써야한다
+	void tell() { // 얘는 	
+	}
+}
+
+class Rectangle extends Shape{
+	void area() { // 상위가 modifier가 default 이므로 여기 modifier 는 protected 혹은 public이 가능하다
+		
+	}
+}
+
+public class AbstractTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

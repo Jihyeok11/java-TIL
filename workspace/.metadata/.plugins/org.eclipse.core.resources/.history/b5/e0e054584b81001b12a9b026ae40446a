@@ -1,0 +1,25 @@
+package day3;
+
+import java.util.Calendar;
+
+public class WeekTest {
+
+	public static void main(String[] args) {
+//		타입 이름 = 값;
+//		변수 = enum.열거값;
+		Week today = Week.WEDNESDAY;
+		System.out.println(today.name());
+		// today 무슨 요일?
+		java.util.Calendar cal = Calendar.getInstance();
+		System.out.println(cal.get(Calendar.YEAR));
+		System.out.println(cal.get(Calendar.MONTH)+1); // 월은 -1 되어서 나온다.
+		System.out.println(cal.get(Calendar.DAY_OF_MONTH));
+		System.out.println(cal.get(Calendar.HOUR_OF_DAY));
+		System.out.println(cal.get(Calendar.MINUTE));
+		System.out.println(cal.get(Calendar.SECOND));
+		System.out.println(cal.get(Calendar.DAY_OF_WEEK));
+		// 일요일 = 1, 월요일 = 2, 화요일 = 3 ...
+
+	}
+
+}

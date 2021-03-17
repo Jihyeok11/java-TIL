@@ -1,0 +1,16 @@
+package day3;
+
+public class Product {
+	private int code;
+	private String productName;
+	private double price;
+	private int balance;
+	
+//	public void setCode(int c) {
+//		code = c;
+//	}
+//	
+//	public int getCode() {
+//		return code;
+//	}
+}

@@ -1,0 +1,19 @@
+package campus;
+
+//import java.util.Calendar;
+import java.util.*;
+
+import multi.A;
+public class C {
+
+	public static void main(String[] args) {
+		A a1 = new A();
+//		java.util.Calendar cal = Calendar.getInstance();
+		Calendar cal = Calendar.getInstance();
+		
+				
+
+
+	}
+
+}

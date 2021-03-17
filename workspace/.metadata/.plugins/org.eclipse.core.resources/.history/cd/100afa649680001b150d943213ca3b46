@@ -1,0 +1,12 @@
+package day2;
+
+public class PrimeNumberTest {
+
+	public static void main(String[] args) {
+		// 소수 = 1과 자신의 수로만 나누어지는 자연수
+		int su = 13;
+		
+
+	}
+
+}

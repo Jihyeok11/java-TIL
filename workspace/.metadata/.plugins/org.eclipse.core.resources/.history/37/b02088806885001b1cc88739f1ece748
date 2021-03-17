@@ -1,0 +1,15 @@
+package day6;
+
+class MyStack {
+	char[] ch = new char[10];
+	int idx = 0; // 멤버변수
+	
+}
+public class SynchroizedTest {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

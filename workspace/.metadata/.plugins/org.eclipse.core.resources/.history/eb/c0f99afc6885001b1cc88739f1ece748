@@ -1,0 +1,23 @@
+package day6;
+
+class MyStack {
+	char[] ch = new char[10];
+	int idx = 0; // 멤버변수
+	void push(char c) {
+		ch[idx] = c;
+		System.out.println
+		("idx = " + idx + ", ch[idx] = "+ ch[idx]);
+		idx ++;
+	}
+	
+}
+public class SynchroizedTest {
+public static void main(String[] args) {
+	MyStack st = new MyStack();
+	st.push('a');
+	st.push('b');
+	st.push('c');
+
+}
+
+}

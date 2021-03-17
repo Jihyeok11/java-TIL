@@ -1,0 +1,42 @@
+package day5;
+
+class StudentTeacher implements Student, Teacher{
+//	String name = "학생"; Student 상속
+//	String name = "교수"; Teacher 상속
+	String name = "조교";
+	public void study() { // 여기서는 public 써줘야 한다.
+		System.out.println(name); // 조교가 나온다
+//		System.out.println(super.name); // 여기서 super는 Object가 된다.Interface는 객체가 될 수 없으므로 생성자도 될 수 없다.
+		System.out.println(Student.name);
+		System.out.println(Teacher.name);
+		// 만약 student.name 값을 바꿀 수는 없다 interface는 final 이라서
+		System.out.println("학생 - 공부하다");
+	}
+
+	@Override
+	public void teach() {
+		System.out.println("선생님 - 가르치다");
+	}
+
+	@Override
+	public void lunch() {
+		System.out.println("학생과 선생님 - 점심먹다");
+	}
+}
+
+public class InterfaceTest {
+
+	public static void main(String[] args) {
+//		StudentTeacher st = new StudentTeacher();
+//		st.study();
+//		st.teach();
+//		st.lunch();
+		
+		StudentTeacher st = new StudentTeacher();
+		st.study();
+		st.teach();
+		st.lunch();
+
+	}
+
+}

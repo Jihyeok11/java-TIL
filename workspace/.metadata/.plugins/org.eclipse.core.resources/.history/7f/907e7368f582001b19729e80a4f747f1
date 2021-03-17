@@ -1,0 +1,16 @@
+package day5;
+
+public class CheckedExceptionTest {
+
+	public static void main(String[] args) {
+		// forname("A")은 A라는 클래스가 있는지 물어보는 api
+		try {
+//			Class.forName("A"); // A라는 클래스는 없다
+			Class.forName("day5.CheckedExceptionTest");  // class가 있으니까 catch 미실행
+		} catch(ClassNotFoundException e) {
+//			e.printStackTrace();
+			System.out.println(e.getMessage());
+		}	
+		java.io.File = new java.io.File("a.java")
+	}
+}

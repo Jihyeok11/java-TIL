@@ -1,0 +1,18 @@
+package day3;
+
+class Call{
+	void add(int i) {
+		// 전달 받은 i가 10이라고 가정
+		System.out.println(i++);
+
+	}
+}
+
+public class CallByValueTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

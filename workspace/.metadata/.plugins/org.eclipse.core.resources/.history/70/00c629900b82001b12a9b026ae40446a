@@ -1,0 +1,25 @@
+package day4;
+
+class Employee{
+	
+	Employee(String i, String n){
+		id = i;
+		name = n;
+	}
+	String id;
+	String name;
+	String title;
+	String dept;
+}
+
+public class ConstructorTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Employee e1 = new Employee("100", "이사원");
+		Employee e1 = new Employee("200", "김대리");
+		Employee e1 = new Employee("300", "박과장");
+		System.out.println(e1.id + ":" + e1.name));
+	}
+
+}

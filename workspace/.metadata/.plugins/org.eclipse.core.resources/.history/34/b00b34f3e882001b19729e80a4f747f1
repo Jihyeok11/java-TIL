@@ -1,0 +1,41 @@
+package day5;
+
+public class ExceptionTest {
+
+	public static void main(String[] args) {
+		
+		// 1. ArrayIndexOutOfBoundsException
+		// args[0] = 100, args[1] = null
+//		int i = Integer.parseInt(args[0]); // 
+//		int j = Integer.parseInt(args[1]); //이 값이 없어서 ArrayIndexOutOfBoundsException
+//		System.out.println(i/j);
+//		System.out.println("main 종료");
+		
+		
+		// 2. ArithmeticException (0으로 나눈 경우)
+		// args[0] = 100, args[1] = null
+//		int i = Integer.parseInt(args[0]); // 
+//		int j = Integer.parseInt(args[1]); //이 값이 없어서 ArrayIndexOutOfBoundsException
+//		System.out.println(i/j);
+//		System.out.println("main 종료");
+		
+		try {
+			int i = Integer.parseInt(args[0]);
+			int j = Integer.parseInt(args[1]);
+			System.out.println(i/j);
+		}
+		catch(ArithmeticException e) { //ArithmeticException가 일어나면 시도
+			// j = 100;
+			System.out.println("0으로 나눌수 없습니다");
+		}
+		catch(NumberFormatException e) {
+			System.out.println("정수료 변경 가능한 값을 입력하세요");
+		}
+		catch() {
+			
+		}
+		System.out.println("main 종료");
+
+	}
+
+}

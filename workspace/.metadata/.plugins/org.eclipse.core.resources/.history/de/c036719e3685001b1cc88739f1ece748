@@ -1,0 +1,16 @@
+package day6;
+
+import java.util.regex.Pattern;
+public class PatternTest {
+
+	public static void main(String[] args) {
+		// 정규표현식 전용 문자열
+		System.out.println(Pattern.matches("aaa*bbb", "Aaacccbbb"));
+		/*
+		 * 1. 010으로 시작
+		 * 국번 3-4 자리 번호
+		 * 전화 번호 4자리 숫자
+		 */
+	}
+
+}

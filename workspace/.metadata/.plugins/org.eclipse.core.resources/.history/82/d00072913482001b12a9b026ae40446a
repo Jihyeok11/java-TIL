@@ -1,0 +1,14 @@
+package edu;
+
+abstract class Shape{
+	abstract void area();
+}
+
+public class AbstractTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

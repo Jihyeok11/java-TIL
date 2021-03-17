@@ -1,0 +1,20 @@
+package day6;
+
+import java.util.regex.Pattern;
+public class PatternTest {
+
+	public static void main(String[] args) {
+		// 정규표현식 전용 문자열
+		System.out.println(Pattern.matches("aaa*bbb", "aaacccbbb"));
+		/*
+		 * 1. 010으로 시작
+		 * 2. 국번 3-4 자리 번호
+		 * 3. 전화 번호 4자리 숫자
+		 */
+		System.out.println(Pattern.matches("010-[0-9]{3,4}-[0,9]{4}", "010-1234-5678s"));
+		System.out.println(Pattern.matches("010-[0-9]{3,4}-[0,9]{4}", "012-1234-5678s"));
+		System.out.println(Pattern.matches("010-[0-9]{3,4}-[0,9]{4}", "010-123-5678s"));
+		System.out.println(Pattern.matches("010-[0-9]{3,4}-[0,9]{4}", "010-123a-5678s"));
+	}
+
+}

@@ -1,0 +1,33 @@
+package day5;
+
+class StudentTeacher implements Student, Teacher{
+//	String name = "학생"; Student 상속
+//	String name = "교수"; Teacher 상속
+	String name = "조교";
+	public void study() { // 여기서는 public 써줘야 한다.
+		System.out.println(name);
+		System.out.println("학생 - 공부하다");
+	}
+
+	@Override
+	public void teach() {
+		System.out.println("선생님 - 가르치다");
+	}
+
+	@Override
+	public void lunch() {
+		System.out.println("학생과 선생님 - 점심먹다");
+	}
+}
+
+public class InterfaceTest {
+
+	public static void main(String[] args) {
+		StudentTeacher st = new StudentTeacher();
+		st.study();
+		st.teach();
+		st.lunch();
+
+	}
+
+}

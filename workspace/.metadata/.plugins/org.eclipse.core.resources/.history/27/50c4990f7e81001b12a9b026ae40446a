@@ -1,0 +1,11 @@
+package day3;
+
+class student{
+	String st = null;
+}
+public class TIL {
+	for (int i;i<3;i++) {
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package day5;
+
+class Test{
+	void m1(int i) {
+		System.out.println(100/i);
+	}
+}
+public class ThrowsTest {
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

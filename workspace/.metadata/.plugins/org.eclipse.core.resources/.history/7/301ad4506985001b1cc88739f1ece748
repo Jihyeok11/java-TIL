@@ -1,0 +1,38 @@
+package day6;
+
+class MyStack {
+	char[] ch = new char[10];
+	int idx = 0; // 멤버변수
+	void push(char c) {
+		ch[idx] = c;
+		System.out.println
+		("idx = " + idx + ", ch[idx] = "+ ch[idx]);
+		idx ++;
+	}
+	
+}
+
+class MyStackThread extends Thread{
+	MyStack st;
+	char c;
+	MyStackThread(MyStack st, char c){
+		this.st = st;
+		this.c = c;
+	}
+	public void run() { // Thread 안에는 run이 꼭 override 해야 한다
+		for (int i = 1; i <= 5; i ++) {
+			
+		}
+	}
+}
+
+public class SynchroizedTest {
+public static void main(String[] args) {
+	MyStack st = new MyStack();
+	st.push('a');
+	st.push('b');
+	st.push('c');
+
+}
+
+}

@@ -1,0 +1,13 @@
+package day5;
+
+public class ObjectClassTest {
+	public static void main(String[] args) {
+		Object o1 = new Object();
+		Object o2 = new Object();
+		System.out.println(o1);
+		System.out.println(o1.toString());
+		System.out.println(o2);
+		System.out.println(o2.toString());
+	}
+
+}

@@ -1,0 +1,16 @@
+package day4;
+
+class Person{
+	String name;
+	int age;
+	String nation;
+}
+
+public class StaticTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
