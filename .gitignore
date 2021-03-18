@@ -2,7 +2,7 @@
 jdk8/
 eclipse/
 jre8/
-/workspace/.metadata/
+workspace/.metadata/
 
 
 # Created by https://www.toptal.com/developers/gitignore/api/eclipse,java
