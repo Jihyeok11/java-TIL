@@ -1,6 +1,0 @@
-package multi;
-
-class A {
-	int i = 10;
-	
-}

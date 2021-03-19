@@ -36,7 +36,7 @@ public class HashSetTest {
 		// 1부터 45 사이의 난수 생성
 		// lotto 출력하면 6개 정수 나오도록 처리(저장 - 조회 출력 순서 일치하지 않아도 된다)
 		while (lotto.size() <6) {
-//			int a = (int)(Math.random()*45)+1 ;
+			int a = (int)(Math.random()*45)+1 ;
 			lotto.add(a);
 		}
 		Iterator lt = lotto.iterator(); // Iterator<Integer> lt = lotto.iterator();

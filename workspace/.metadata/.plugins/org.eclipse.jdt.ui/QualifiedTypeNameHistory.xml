@@ -18,4 +18,14 @@
 <fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="day6.Book"/>
 <fullyQualifiedTypeName name="day6.MyStackThread"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="day7.SameSentence"/>
+<fullyQualifiedTypeName name="generic2.Apple"/>
+<fullyQualifiedTypeName name="generic2.Orange"/>
+<fullyQualifiedTypeName name="generic2.Paper"/>
+<fullyQualifiedTypeName name="generic2.Box"/>
+<fullyQualifiedTypeName name="generic2.BoxManager"/>
 </qualifiedTypeNameHistroy>
