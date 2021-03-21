@@ -28,4 +28,14 @@
 <fullyQualifiedTypeName name="generic2.Paper"/>
 <fullyQualifiedTypeName name="generic2.Box"/>
 <fullyQualifiedTypeName name="generic2.BoxManager"/>
+<fullyQualifiedTypeName name="day8.Outer.Inner"/>
+<fullyQualifiedTypeName name="day8.Outer.Inner2"/>
+<fullyQualifiedTypeName name="day8.Outer"/>
+<fullyQualifiedTypeName name="day8.Outer2.Inner"/>
+<fullyQualifiedTypeName name="day8.Outer2"/>
+<fullyQualifiedTypeName name="day8.Outer2.Inner2"/>
+<fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
