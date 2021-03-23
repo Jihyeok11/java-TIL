@@ -8,7 +8,6 @@ class Person{
 }
 
 public class StaticTest {
-
 	public static void main(String[] args) {
 		System.out.println(Person.nation); // nation은 특정 개체에 속해 있는 것이 아니라 p1 선언 하기 전에도 이렇게 프린트 가능
 		Person p1 = new Person();
@@ -22,7 +21,5 @@ public class StaticTest {
 		p2.age = 30;
 //		p2.nation = "대한민국";
 		System.out.println(p2.name + ":" + p2.age + ":" + p2.nation);
-		
 	}
-
 }

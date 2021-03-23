@@ -3,7 +3,6 @@ package day3;
 public class InputTest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		// main2(); // 다른 main2()를 만들어서 사용할려면 이런식으로 한다.
 		/* 
 		 * Run - Run configurations... - Arguments - Program Arguments 영역에 자바 program 과정 을 입력하면 args가 아래처럼 변경된다

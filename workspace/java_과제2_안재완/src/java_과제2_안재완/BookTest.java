@@ -27,7 +27,7 @@ class Megazine {
 	
 	public String toString() {
 		
-		return ();
+		return "";
 	}
 }
 

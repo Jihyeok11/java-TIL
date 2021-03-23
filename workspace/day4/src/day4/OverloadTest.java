@@ -12,10 +12,10 @@ class Adding{
 public class OverloadTest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		String s1 = "100";
 		int dec = Integer.parseInt(s1);
 		int bin = java.lang.Integer.parseInt(s1,2);
+		System.out.println(bin);
 		/*
 		 * parseInt는 아래처럼 작동하고 있다
 		 * class Integer{

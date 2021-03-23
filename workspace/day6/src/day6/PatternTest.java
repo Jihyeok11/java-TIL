@@ -31,8 +31,8 @@ public class PatternTest {
 		String myemail = "javadosa1!@campus.net";
 		boolean result = Pattern.matches
 				("[a-zA-Z0-9!#$%_]{8,10}@[a-zA-Z0-9]{3,10}\\.(com|co.kr|go.kr)",myemail);
-		if(result == true) {
-			System.out.println("쌉가능");
+		if(result == false) {
+			System.out.println("불쌍맨이야");
 		}
 		
 	}

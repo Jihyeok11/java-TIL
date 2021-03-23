@@ -1,0 +1,421 @@
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileCopyTest {
+
+	public static void main(String[] args) {
+		// ëªë ¹í ë§¤ê°ë³ì ìë ¥
+		// a.txt, b.txt
+		// src/FileCopyTest.javaë¥¼ b.txtì ==> (b.txt. íì¼ ì¡´ì¬ x) ==> b.txt ìì±
+		// src/FileClassTest.javaë¥¼ b.txt ==> (b.txt ì¶ë ¥ íì¼ ì¡´ì¬ o) ==> ê¸°ì¡´ ë´ì© ì­ì 
+		// src/FileClassTest.javaë¥¼ b.txt (true) ==> (b.txt ì¶ë ¥ íì¼ ì¡´ì¬ o) ==> ê¸°ì¡´ ë´ì© ì ì§, ì¶ê°
+		try {
+		FileInputStream fi = new FileInputStream(args[0]);
+		// ì¤ì  ìë ¥ íì¼ì´ ì¡´ì¬íì§ ìì¼ë©´ ì¤ë¥ê° ë°ìíë¤. 
+		// ì¶ë ¥ íì¼ì ìì´ë ìì±ì´ ëë¤.
+		// ìë ¥ íì¼ì´ ììì ëì ëì²ë²
+		/*
+		 * File f = new File(args[0]);
+		 * if(f.exists()){
+		 * 	FileInputStream fi = new FIleInputStream(f);
+		 */
+//		FileOutputStream fo = new FileOutputStream(args[1], true); //trueë¡ íë©´ ê¸°ì¡´ ë´ì© ì ì§, false(default)ì´ë©´ ë´ì© ì­ì 
+		FileWriter fo = new FileWriter(args[1], true); 
+		while(true) {
+			int result = fi.read(); // readì´ë¯ë¡ 1ë°ì´í¸, aì´ë©´ resultë 97ì´ë¤
+			fo.write(result); // int ë°ì´í° 1ë°ì´í¸ë§ ì¶ë ¥ ==> 97ì´ìì¼ë©´ Aë¡ ì¶ë ¥
+			if (result == -1) {break;}
+			
+		}
+		fi.close();
+		fo.close();
+		
+		} catch(IOException e) { // a.txtê° ììë ë°ìíë FileNotFoundExceptionë IOExceptionìì ê±¸ë¬ì¡ë¤
+			e.printStackTrace();
+		}
+
+	}
+
+}
+￿import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileCopyTest {
+
+	public static void main(String[] args) {
+		// ëªë ¹í ë§¤ê°ë³ì ìë ¥
+		// a.txt, b.txt
+		// src/FileCopyTest.javaë¥¼ b.txtì ==> (b.txt. íì¼ ì¡´ì¬ x) ==> b.txt ìì±
+		// src/FileClassTest.javaë¥¼ b.txt ==> (b.txt ì¶ë ¥ íì¼ ì¡´ì¬ o) ==> ê¸°ì¡´ ë´ì© ì­ì 
+		// src/FileClassTest.javaë¥¼ b.txt (true) ==> (b.txt ì¶ë ¥ íì¼ ì¡´ì¬ o) ==> ê¸°ì¡´ ë´ì© ì ì§, ì¶ê°
+		try {
+		FileInputStream fi = new FileInputStream(args[0]);
+		// ì¤ì  ìë ¥ íì¼ì´ ì¡´ì¬íì§ ìì¼ë©´ ì¤ë¥ê° ë°ìíë¤. 
+		// ì¶ë ¥ íì¼ì ìì´ë ìì±ì´ ëë¤.
+		// ìë ¥ íì¼ì´ ììì ëì ëì²ë²
+		/*
+		 * File f = new File(args[0]);
+		 * if(f.exists()){
+		 * 	FileInputStream fi = new FIleInputStream(f);
+		 */
+//		FileOutputStream fo = new FileOutputStream(args[1], true); //trueë¡ íë©´ ê¸°ì¡´ ë´ì© ì ì§, false(default)ì´ë©´ ë´ì© ì­ì 
+		FileWriter fo = new FileWriter(args[1], true); 
+		while(true) {
+			int result = fi.read(); // readì´ë¯ë¡ 1ë°ì´í¸, aì´ë©´ resultë 97ì´ë¤
+			fo.write(result); // int ë°ì´í° 1ë°ì´í¸ë§ ì¶ë ¥ ==> 97ì´ìì¼ë©´ Aë¡ ì¶ë ¥
+			if (result == -1) {break;}
+			
+		}
+		fi.close();
+		fo.close();
+		
+		} catch(IOException e) { // a.txtê° ììë ë°ìíë FileNotFoundExceptionë IOExceptionìì ê±¸ë¬ì¡ë¤
+			e.printStackTrace();
+		}
+
+	}
+
+}
+￿import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileCopyTest {
+
+	public static void main(String[] args) {
+		// ëªë ¹í ë§¤ê°ë³ì ìë ¥
+		// a.txt, b.txt
+		// src/FileCopyTest.javaë¥¼ b.txtì ==> (b.txt. íì¼ ì¡´ì¬ x) ==> b.txt ìì±
+		// src/FileClassTest.javaë¥¼ b.txt ==> (b.txt ì¶ë ¥ íì¼ ì¡´ì¬ o) ==> ê¸°ì¡´ ë´ì© ì­ì 
+		// src/FileClassTest.javaë¥¼ b.txt (true) ==> (b.txt ì¶ë ¥ íì¼ ì¡´ì¬ o) ==> ê¸°ì¡´ ë´ì© ì ì§, ì¶ê°
+		try {
+		FileInputStream fi = new FileInputStream(args[0]);
+		// ì¤ì  ìë ¥ íì¼ì´ ì¡´ì¬íì§ ìì¼ë©´ ì¤ë¥ê° ë°ìíë¤. 
+		// ì¶ë ¥ íì¼ì ìì´ë ìì±ì´ ëë¤.
+		// ìë ¥ íì¼ì´ ììì ëì ëì²ë²
+		/*
+		 * File f = new File(args[0]);
+		 * if(f.exists()){
+		 * 	FileInputStream fi = new FIleInputStream(f);
+		 */
+//		FileOutputStream fo = new FileOutputStream(args[1], true); //trueë¡ íë©´ ê¸°ì¡´ ë´ì© ì ì§, false(default)ì´ë©´ ë´ì© ì­ì 
+		FileWriter fo = new FileWriter(args[1], true); 
+		while(true) {
+			int result = fi.read(); // readì´ë¯ë¡ 1ë°ì´í¸, aì´ë©´ resultë 97ì´ë¤
+			fo.write(result); // int ë°ì´í° 1ë°ì´í¸ë§ ì¶ë ¥ ==> 97ì´ìì¼ë©´ Aë¡ ì¶ë ¥
+			if (result == -1) {break;}
+			
+		}
+		fi.close();
+		fo.close();
+		
+		} catch(IOException e) { // a.txtê° ììë ë°ìíë FileNotFoundExceptionë IOExceptionìì ê±¸ë¬ì¡ë¤
+			e.printStackTrace();
+		}
+
+	}
+
+}
+￿import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileCopyTest {
+
+	public static void main(String[] args) {
+		// ëªë ¹í ë§¤ê°ë³ì ìë ¥
+		// a.txt, b.txt
+		// src/FileCopyTest.javaë¥¼ b.txtì ==> (b.txt. íì¼ ì¡´ì¬ x) ==> b.txt ìì±
+		// src/FileClassTest.javaë¥¼ b.txt ==> (b.txt ì¶ë ¥ íì¼ ì¡´ì¬ o) ==> ê¸°ì¡´ ë´ì© ì­ì 
+		// src/FileClassTest.javaë¥¼ b.txt (true) ==> (b.txt ì¶ë ¥ íì¼ ì¡´ì¬ o) ==> ê¸°ì¡´ ë´ì© ì ì§, ì¶ê°
+		try {
+		FileInputStream fi = new FileInputStream(args[0]);
+		// ì¤ì  ìë ¥ íì¼ì´ ì¡´ì¬íì§ ìì¼ë©´ ì¤ë¥ê° ë°ìíë¤. 
+		// ì¶ë ¥ íì¼ì ìì´ë ìì±ì´ ëë¤.
+		// ìë ¥ íì¼ì´ ììì ëì ëì²ë²
+		/*
+		 * File f = new File(args[0]);
+		 * if(f.exists()){
+		 * 	FileInputStream fi = new FIleInputStream(f);
+		 */
+//		FileOutputStream fo = new FileOutputStream(args[1], true); //trueë¡ íë©´ ê¸°ì¡´ ë´ì© ì ì§, false(default)ì´ë©´ ë´ì© ì­ì 
+		FileWriter fo = new FileWriter(args[1], true); 
+		while(true) {
+			int result = fi.read(); // readì´ë¯ë¡ 1ë°ì´í¸, aì´ë©´ resultë 97ì´ë¤
+			fo.write(result); // int ë°ì´í° 1ë°ì´í¸ë§ ì¶ë ¥ ==> 97ì´ìì¼ë©´ Aë¡ ì¶ë ¥
+			if (result == -1) {break;}
+			
+		}
+		fi.close();
+		fo.close();
+		
+		} catch(IOException e) { // a.txtê° ììë ë°ìíë FileNotFoundExceptionë IOExceptionìì ê±¸ë¬ì¡ë¤
+			e.printStackTrace();
+		}
+
+	}
+
+}
+￿import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileCopyTest {
+
+	public static void main(String[] args) {
+		// ëªë ¹í ë§¤ê°ë³ì ìë ¥
+		// a.txt, b.txt
+		// src/FileCopyTest.javaë¥¼ b.txtì ==> (b.txt. íì¼ ì¡´ì¬ x) ==> b.txt ìì±
+		// src/FileClassTest.javaë¥¼ b.txt ==> (b.txt ì¶ë ¥ íì¼ ì¡´ì¬ o) ==> ê¸°ì¡´ ë´ì© ì­ì 
+		// src/FileClassTest.javaë¥¼ b.txt (true) ==> (b.txt ì¶ë ¥ íì¼ ì¡´ì¬ o) ==> ê¸°ì¡´ ë´ì© ì ì§, ì¶ê°
+		try {
+		FileInputStream fi = new FileInputStream(args[0]);
+		// ì¤ì  ìë ¥ íì¼ì´ ì¡´ì¬íì§ ìì¼ë©´ ì¤ë¥ê° ë°ìíë¤. 
+		// ì¶ë ¥ íì¼ì ìì´ë ìì±ì´ ëë¤.
+		// ìë ¥ íì¼ì´ ììì ëì ëì²ë²
+		/*
+		 * File f = new File(args[0]);
+		 * if(f.exists()){
+		 * 	FileInputStream fi = new FIleInputStream(f);
+		 */
+//		FileOutputStream fo = new FileOutputStream(args[1], true); //trueë¡ íë©´ ê¸°ì¡´ ë´ì© ì ì§, false(default)ì´ë©´ ë´ì© ì­ì 
+		FileWriter fo = new FileWriter(args[1], true); 
+		while(true) {
+			int result = fi.read(); // readì´ë¯ë¡ 1ë°ì´í¸, aì´ë©´ resultë 97ì´ë¤
+			fo.write(result); // int ë°ì´í° 1ë°ì´í¸ë§ ì¶ë ¥ ==> 97ì´ìì¼ë©´ Aë¡ ì¶ë ¥
+			if (result == -1) {break;}
+			
+		}
+		fi.close();
+		fo.close();
+		
+		} catch(IOException e) { // a.txtê° ììë ë°ìíë FileNotFoundExceptionë IOExceptionìì ê±¸ë¬ì¡ë¤
+			e.printStackTrace();
+		}
+
+	}
+
+}
+￿import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileCopyTest {
+
+	public static void main(String[] args) {
+		// ëªë ¹í ë§¤ê°ë³ì ìë ¥
+		// a.txt, b.txt
+		// src/FileCopyTest.javaë¥¼ b.txtì ==> (b.txt. íì¼ ì¡´ì¬ x) ==> b.txt ìì±
+		// src/FileClassTest.javaë¥¼ b.txt ==> (b.txt ì¶ë ¥ íì¼ ì¡´ì¬ o) ==> ê¸°ì¡´ ë´ì© ì­ì 
+		// src/FileClassTest.javaë¥¼ b.txt (true) ==> (b.txt ì¶ë ¥ íì¼ ì¡´ì¬ o) ==> ê¸°ì¡´ ë´ì© ì ì§, ì¶ê°
+		try {
+		FileInputStream fi = new FileInputStream(args[0]);
+		// ì¤ì  ìë ¥ íì¼ì´ ì¡´ì¬íì§ ìì¼ë©´ ì¤ë¥ê° ë°ìíë¤. 
+		// ì¶ë ¥ íì¼ì ìì´ë ìì±ì´ ëë¤.
+		// ìë ¥ íì¼ì´ ììì ëì ëì²ë²
+		/*
+		 * File f = new File(args[0]);
+		 * if(f.exists()){
+		 * 	FileInputStream fi = new FIleInputStream(f);
+		 */
+//		FileOutputStream fo = new FileOutputStream(args[1], true); //trueë¡ íë©´ ê¸°ì¡´ ë´ì© ì ì§, false(default)ì´ë©´ ë´ì© ì­ì 
+		FileWriter fo = new FileWriter(args[1], true); 
+		while(true) {
+			int result = fi.read(); // readì´ë¯ë¡ 1ë°ì´í¸, aì´ë©´ resultë 97ì´ë¤
+			fo.write(result); // int ë°ì´í° 1ë°ì´í¸ë§ ì¶ë ¥ ==> 97ì´ìì¼ë©´ Aë¡ ì¶ë ¥
+			if (result == -1) {break;}
+			
+		}
+		fi.close();
+		fo.close();
+		
+		} catch(IOException e) { // a.txtê° ììë ë°ìíë FileNotFoundExceptionë IOExceptionìì ê±¸ë¬ì¡ë¤
+			e.printStackTrace();
+		}
+
+	}
+
+}
+￿import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileCopyTest {
+
+	public static void main(String[] args) {
+		// ëªë ¹í ë§¤ê°ë³ì ìë ¥
+		// a.txt, b.txt
+		// src/FileCopyTest.javaë¥¼ b.txtì ==> (b.txt. íì¼ ì¡´ì¬ x) ==> b.txt ìì±
+		// src/FileClassTest.javaë¥¼ b.txt ==> (b.txt ì¶ë ¥ íì¼ ì¡´ì¬ o) ==> ê¸°ì¡´ ë´ì© ì­ì 
+		// src/FileClassTest.javaë¥¼ b.txt (true) ==> (b.txt ì¶ë ¥ íì¼ ì¡´ì¬ o) ==> ê¸°ì¡´ ë´ì© ì ì§, ì¶ê°
+		try {
+		FileInputStream fi = new FileInputStream(args[0]);
+		// ì¤ì  ìë ¥ íì¼ì´ ì¡´ì¬íì§ ìì¼ë©´ ì¤ë¥ê° ë°ìíë¤. 
+		// ì¶ë ¥ íì¼ì ìì´ë ìì±ì´ ëë¤.
+		// ìë ¥ íì¼ì´ ììì ëì ëì²ë²
+		/*
+		 * File f = new File(args[0]);
+		 * if(f.exists()){
+		 * 	FileInputStream fi = new FIleInputStream(f);
+		 */
+//		FileOutputStream fo = new FileOutputStream(args[1], true); //trueë¡ íë©´ ê¸°ì¡´ ë´ì© ì ì§, false(default)ì´ë©´ ë´ì© ì­ì 
+		FileWriter fo = new FileWriter(args[1], true); 
+		while(true) {
+			int result = fi.read(); // readì´ë¯ë¡ 1ë°ì´í¸, aì´ë©´ resultë 97ì´ë¤
+			fo.write(result); // int ë°ì´í° 1ë°ì´í¸ë§ ì¶ë ¥ ==> 97ì´ìì¼ë©´ Aë¡ ì¶ë ¥
+			if (result == -1) {break;}
+			
+		}
+		fi.close();
+		fo.close();
+		
+		} catch(IOException e) { // a.txtê° ììë ë°ìíë FileNotFoundExceptionë IOExceptionìì ê±¸ë¬ì¡ë¤
+			e.printStackTrace();
+		}
+
+	}
+
+}
+￿import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileCopyTest {
+
+	public static void main(String[] args) {
+		// ëªë ¹í ë§¤ê°ë³ì ìë ¥
+		// a.txt, b.txt
+		// src/FileCopyTest.javaë¥¼ b.txtì ==> (b.txt. íì¼ ì¡´ì¬ x) ==> b.txt ìì±
+		// src/FileClassTest.javaë¥¼ b.txt ==> (b.txt ì¶ë ¥ íì¼ ì¡´ì¬ o) ==> ê¸°ì¡´ ë´ì© ì­ì 
+		// src/FileClassTest.javaë¥¼ b.txt (true) ==> (b.txt ì¶ë ¥ íì¼ ì¡´ì¬ o) ==> ê¸°ì¡´ ë´ì© ì ì§, ì¶ê°
+		try {
+		FileInputStream fi = new FileInputStream(args[0]);
+		// ì¤ì  ìë ¥ íì¼ì´ ì¡´ì¬íì§ ìì¼ë©´ ì¤ë¥ê° ë°ìíë¤. 
+		// ì¶ë ¥ íì¼ì ìì´ë ìì±ì´ ëë¤.
+		// ìë ¥ íì¼ì´ ììì ëì ëì²ë²
+		/*
+		 * File f = new File(args[0]);
+		 * if(f.exists()){
+		 * 	FileInputStream fi = new FIleInputStream(f);
+		 */
+//		FileOutputStream fo = new FileOutputStream(args[1], true); //trueë¡ íë©´ ê¸°ì¡´ ë´ì© ì ì§, false(default)ì´ë©´ ë´ì© ì­ì 
+		FileWriter fo = new FileWriter(args[1], true); 
+		while(true) {
+			int result = fi.read(); // readì´ë¯ë¡ 1ë°ì´í¸, aì´ë©´ resultë 97ì´ë¤
+			fo.write(result); // int ë°ì´í° 1ë°ì´í¸ë§ ì¶ë ¥ ==> 97ì´ìì¼ë©´ Aë¡ ì¶ë ¥
+			if (result == -1) {break;}
+			
+		}
+		fi.close();
+		fo.close();
+		
+		} catch(IOException e) { // a.txtê° ììë ë°ìíë FileNotFoundExceptionë IOExceptionìì ê±¸ë¬ì¡ë¤
+			e.printStackTrace();
+		}
+
+	}
+
+}
+￿import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileCopyTest {
+
+	public static void main(String[] args) {
+		// ëªë ¹í ë§¤ê°ë³ì ìë ¥
+		// a.txt, b.txt
+		// src/FileCopyTest.javaë¥¼ b.txtì ==> (b.txt. íì¼ ì¡´ì¬ x) ==> b.txt ìì±
+		// src/FileClassTest.javaë¥¼ b.txt ==> (b.txt ì¶ë ¥ íì¼ ì¡´ì¬ o) ==> ê¸°ì¡´ ë´ì© ì­ì 
+		// src/FileClassTest.javaë¥¼ b.txt (true) ==> (b.txt ì¶ë ¥ íì¼ ì¡´ì¬ o) ==> ê¸°ì¡´ ë´ì© ì ì§, ì¶ê°
+		try {
+		FileInputStream fi = new FileInputStream(args[0]);
+		// ì¤ì  ìë ¥ íì¼ì´ ì¡´ì¬íì§ ìì¼ë©´ ì¤ë¥ê° ë°ìíë¤. 
+		// ì¶ë ¥ íì¼ì ìì´ë ìì±ì´ ëë¤.
+		// ìë ¥ íì¼ì´ ììì ëì ëì²ë²
+		/*
+		 * File f = new File(args[0]);
+		 * if(f.exists()){
+		 * 	FileInputStream fi = new FIleInputStream(f);
+		 */
+//		FileOutputStream fo = new FileOutputStream(args[1], true); //trueë¡ íë©´ ê¸°ì¡´ ë´ì© ì ì§, false(default)ì´ë©´ ë´ì© ì­ì 
+		FileWriter fo = new FileWriter(args[1], true); 
+		while(true) {
+			int result = fi.read(); // readì´ë¯ë¡ 1ë°ì´í¸, aì´ë©´ resultë 97ì´ë¤
+			fo.write(result); // int ë°ì´í° 1ë°ì´í¸ë§ ì¶ë ¥ ==> 97ì´ìì¼ë©´ Aë¡ ì¶ë ¥
+			if (result == -1) {break;}
+			
+		}
+		fi.close();
+		fo.close();
+		
+		} catch(IOException e) { // a.txtê° ììë ë°ìíë FileNotFoundExceptionë IOExceptionìì ê±¸ë¬ì¡ë¤
+			e.printStackTrace();
+		}
+
+	}
+
+}
+￿import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileCopyTest {
+
+	public static void main(String[] args) {
+		// ëªë ¹í ë§¤ê°ë³ì ìë ¥
+		// a.txt, b.txt
+		// src/FileCopyTest.javaë¥¼ b.txtì ==> (b.txt. íì¼ ì¡´ì¬ x) ==> b.txt ìì±
+		// src/FileClassTest.javaë¥¼ b.txt ==> (b.txt ì¶ë ¥ íì¼ ì¡´ì¬ o) ==> ê¸°ì¡´ ë´ì© ì­ì 
+		// src/FileClassTest.javaë¥¼ b.txt (true) ==> (b.txt ì¶ë ¥ íì¼ ì¡´ì¬ o) ==> ê¸°ì¡´ ë´ì© ì ì§, ì¶ê°
+		try {
+		FileInputStream fi = new FileInputStream(args[0]);
+		// ì¤ì  ìë ¥ íì¼ì´ ì¡´ì¬íì§ ìì¼ë©´ ì¤ë¥ê° ë°ìíë¤. 
+		// ì¶ë ¥ íì¼ì ìì´ë ìì±ì´ ëë¤.
+		// ìë ¥ íì¼ì´ ììì ëì ëì²ë²
+		/*
+		 * File f = new File(args[0]);
+		 * if(f.exists()){
+		 * 	FileInputStream fi = new FIleInputStream(f);
+		 */
+//		FileOutputStream fo = new FileOutputStream(args[1], true); //trueë¡ íë©´ ê¸°ì¡´ ë´ì© ì ì§, false(default)ì´ë©´ ë´ì© ì­ì 
+		FileWriter fo = new FileWriter(args[1], true); 
+		while(true) {
+			int result = fi.read(); // readì´ë¯ë¡ 1ë°ì´í¸, aì´ë©´ resultë 97ì´ë¤
+			fo.write(result); // int ë°ì´í° 1ë°ì´í¸ë§ ì¶ë ¥ ==> 97ì´ìì¼ë©´ Aë¡ ì¶ë ¥
+			if (result == -1) {break;}
+			
+		}
+		fi.close();
+		fo.close();
+		
+		} catch(IOException e) { // a.txtê° ììë ë°ìíë FileNotFoundExceptionë IOExceptionìì ê±¸ë¬ì¡ë¤
+			e.printStackTrace();
+		}
+
+	}
+
+}
+￿
