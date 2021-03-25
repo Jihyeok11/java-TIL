@@ -1,6 +1,0 @@
-package day5;
-
-public interface Teacher {
-	public abstract void teach(); // public과 abstract는 안써도 자동으로 생성
-	public abstract void lunch();
-}

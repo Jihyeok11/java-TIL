@@ -1,6 +1,0 @@
-package day5;
-
-public interface Student {
-	/* public abstact 생략*/void study();
-	public /* abstract */ void lunch();
-}
