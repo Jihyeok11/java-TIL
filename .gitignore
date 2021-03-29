@@ -1,12 +1,6 @@
-# 폴더
-jdk8/
-eclipse/
-jre8/
-workspace/.metadata/
 
-
-# Created by https://www.toptal.com/developers/gitignore/api/eclipse,java
-# Edit at https://www.toptal.com/developers/gitignore?templates=eclipse,java
+# Created by https://www.toptal.com/developers/gitignore/api/oracleforms,eclipse,java
+# Edit at https://www.toptal.com/developers/gitignore?templates=oracleforms,eclipse,java
 
 ### Eclipse ###
 .metadata
@@ -99,4 +93,14 @@ local.properties
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-# End of https://www.toptal.com/developers/gitignore/api/eclipse,java
+### OracleForms ###
+# Compiled Form Modules
+*.fmx
+
+# Compiled Menu Modules
+*.mmx
+
+# Compiled Pre-Linked Libraries
+*.plx
+
+# End of https://www.toptal.com/developers/gitignore/api/oracleforms,eclipse,java

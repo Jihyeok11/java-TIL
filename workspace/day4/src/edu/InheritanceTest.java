@@ -49,7 +49,8 @@ public class InheritanceTest {
 		m.cntofSub = 10;
 		System.out.println(m.id+":"+m.name+":"+m.jobofManage+":"+m.cntofSub);
 		m.test();
-		m.printEmp(); // Employee는 Manager는로 부터 상속받으므로 printEmp도 있다	
+		m.printEmp(); // Emp
+		Manager s = (Manager)new Employee();
 	}
 }
 

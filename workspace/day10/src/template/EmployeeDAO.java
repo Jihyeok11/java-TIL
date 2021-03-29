@@ -29,7 +29,7 @@ public class EmployeeDAO {
 				String name = items[1];
 				String salary = items[2];
 //				System.out.println(id + "|" + name + "|" + salary*1.5);
-				list.add(id + "|" + name + "|" + salary);
+//				list.add(id + "|" + name + "|" + salary);
 			}
 			sc.close();
 			fr.close();
