@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1> 입력(키보드, 마우스) 양식 태그</h1>
+<form action="입력값 전송 파일">
+	아이디입력 : <input type="text" name = "id"> <br>
+	암호입력: <input type="password" name = "pw"> <br>
+	권한 : <input type="hidden" name = "role" vㄴalue="admin"> <br>
+	
+	<!-- 단수선택 -->
+	성별 : 
+	<input type="radio" name= "gender" value = "male">남자
+	<input type="radio" name= "gender" value = "female">여자
+	<br>
+	<!-- 복수선택 -->
+	수강과목 :
+	<input type="checkbox" name="subject" value="java">자바
+	<input type="checkbox" name="subject" value="oracle">오라클
+	<input type="checkbox" name="subject" value="html">html
+	<input type="checkbox" name="subject" value="jsp">jsp
+	
+	<!-- 버튼들 -->
+	<input type="image" name="myimage" src="images/google.png"><br>
+	
+	자기소개서 파일
+	<input type="file" name="myfile"><br>
+	html5(브라우저마다 모양이 다르다)
+	<input type="color"><br>
+	<input type="datetime-local"><br>
+	<input type="number"><br>
+	
+	<textarea rows="5" cols="100"></textarea><br>
+	
+	<select multiple="multiple"> <!--다중선택을 할려면 multiple 속성 추가, 선택할때는 ctrl누른채로 클릭  -->
+		<optgroup label="중식">
+			<option> 짜장면</option>
+			<option> 짬뽕</option>
+		</optgroup>
+		<optgroup label="한식">
+			<option> 김밥</option>
+			<option> 떡볶이</option>
+		</optgroup>
+		<optgroup label = "기타">
+			<option> 안먹어</option>
+		</optgroup>
+	</select>
+	
+	<input type=button value="기능?"><br>
+	<input type=reset value="입력취소"><br>
+	<input type=submit value="로그인">
+	
+	
+</form>
+</body>
+</html>
