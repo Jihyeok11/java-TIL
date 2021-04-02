@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+/* h1 {color:red;} */
+/* * {color:red} */
+/* #first {color:red;} */
+/* .redgroup {color:red;} */
+/* input[type=text] {color:red;} */
+/* input[name] {color:red} name값 들어간 애들을 전부 바꿈*/
+/* body a {color:red;} 부모의 모든 후손*/
+/* body > a{color:red;} 부모 > 자손*/
+
+/* h1:hover {color:blue;} 마우스를 올렸을 때*/
+/* h1:active {color:red;} 마우스로 클릭했을 때*/
+
+/* input[type=radio]:checked {color:red;}
+	option[selected] {color:red;}  option태그에서 빨간색 확인*/
+
+/* option:nth-child(2n) {color:red;}
+		:first-child
+		:last-child 짝수번째마다 빨간색으로*/
+
+/* h1 {display:none} 없애버리기*/
+#upper {
+	background-color: #00ff00;
+	width: 300px;
+	height: 100px;
+	font-size: 2em;
+	/* border : solid 10px aqua; 선종류 | 두꼐 | 선색상 순이다 */
+	border-style: dotted;
+	border-width: 5px;
+	border-color: #654321;
+	border-radius: 60px;
+	margin: 20px;
+	padding: 50px;
+}
+
+#lower div { /* lower에 포함되어 있는 div를 의미  */
+	display: inline;
+}
+
+body {
+	background-image: url('/html/images/google.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100px;
+	/* 가로 100%, 세로 100px (하나만 쓰면 가로, 자동 크기정렬)*/
+}
+
+#first {
+	font-size: 2em; /* p태그의 기본 사이즈는 16px */
+	font-family: '궁서체';
+	font-style: italic;
+	text-decoration: underline;
+}
+
+a {
+	color: #00ff00;
+	text-decoration: none;
+}
+
+#align {
+	background-color: #eeeeee;
+	width: 400px;
+	text-align: center;
+	margin: auto; /* 브라우저가 중앙으로 알아서 정렬 */
+	
+	text-shadow: 5px 5px 5xp silver;
+	box-shadow: 5px 5px 5px red;
+}
+</style>
+</head>
+<body>
+	<div id="upper">div 태그 영역입니다</div>
+	<h1>첫번째 제목</h1>
+	<p id="first">p 태그는 하나의 문단을 표현합니다. Aeee? Jae Ga Yo?</p>
+	<div id="align">정렬 테스트 중입니다.</div>
+	<a class="redgroup" href="/html/first.html">이동</a>
+	<p class="redgroup">p 태그는 하나의 문단을 표현합니다.</p>
+	아이디입력
+	<input type="text" name="id" value="none"> 암호입력
+	<input type="password" value=none> 이름입력
+	<input type="text" value="이름입력칸">
+	<br> 성별
+	<input type="radio" name="gen" value="남">남자
+	<input type="radio" name="gen" value="여" checked="checked"> 여자
+	<br>
+	<select>
+		<option>첫번째</option>
+		<option selected="selected">두번Wo쨰</option>
+		<option>세번째</option>
+		<option>세번째</option>
+		<option>4번째</option>
+		<option>5번째</option>
+		<option>6번째</option>
+	</select>
+
+
+	<div id="lower">
+		<div>아래쪽 div1</div>
+		<div>아래쪽 div2</div>
+		<div>아래쪽 div3</div>
+	</div>
+</body>
+</html>

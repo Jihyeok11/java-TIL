@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		alert("메시지 - 확인 버튼을 클릭해야만 없어집니다")
+		var prom = prompt("이름을 입력하세요");
+		document.write(prom + "<br>");
+		var conf = confirm("확실합니까?"); // 사용자의 입력을 받는역할. 확인/취소 처럼 버튼 2개를 만들어 준다
+		if (conf == undefined) {
+			document.write("미안하다")
+		} else {
+			document.write(conf + "<br>")
+		}
+	</script>
+
+</body>
+</html>

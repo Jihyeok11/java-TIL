@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/* 
+		 1. promt 창에서 입력한다.
+		 학생이름 국어 영어 수학
+		 2. 입력한 정보를 분리한다.
+		 3. 총점 , 평균(실수), 평균(정수) 계산한다.
+		 4. 점수 평균에 따라서 등급
+		 90점 이상이면 A
+		 80점 이상이면 B
+		 70점 이상이면 C
+		 60점 이상이면 D
+		 나머지는 F
+		 5. 출력한다 
+		 */
+		var inform = prompt();
+		var inform_list = inform.split(' ');
+		var student = {
+				name :inform_list[0],
+				kor : inform_list[1],
+				eng : inform_list[2],
+				math: inform_list[3],
+				
+				sum : 0,
+				avgFloat : 0,
+				avgInt : 0,
+				grade : '',
+				calc: function(){
+					this.kor = parseInt(this.kor);
+					this.eng = parseInt(this.eng);
+					this.math = parseInt(this.math);
+					document.write(typeof(this.kor));
+					this.sum = this.kor+this.eng+this.math;
+					this.avgFloat = this.sum / 3;
+					this.avgInt = parseInt(this.avgFloat);
+					
+				}, 
+				getGrade : function(){
+					if(this.avgInt >= 90){
+						this.grade = "A등급"
+					} else if(this.avgInt >= 80){
+						this.grade = "B등급"
+					}else if(this.avgInt >= 70){
+						this.grade = "C등급"
+					}else if(this.avgInt >= 60){
+						this.grade = "D등급"
+					}else {
+						this.grade = "F등급"
+					}
+				},
+				toString : function(){
+					// alert(student.toString) 시도
+					return "이름 = "+this.name + " <br>국어 =" + this.kor + "<br>영어 = "+ this.eng + "<br> 수학 = "+this.math + "<br>총점 = "+ this.sum + "<br>평균 = " + this.avgFloat + "<br> 평균(정수) = " +this.avgInt + "<br> 등급 : "+this.grade;s
+				}
+		};
+		student.calc();
+		student.getGrade();
+		document.write(student + "<br>");
+		
+		// 자바스크립트 객체 - json 변환 함수 ( 약간의 규칙을 강제적 부여)
+		var json_student = JSON.stringify(student);
+		document.write(json_student + "<br>");
+		// 결과값으로 {"name":"하","kor":100,"eng":90,"math":80,"sum":270,"avgFloat":90,"avgInt":90,"grade":"A등급"}
+		 
+		
+		// 다른 프로그램이 자바 스크립트로 json 전달 받아서 해석, 원래 자바스크립트 객체로 사용하려고
+		var origin_student = JSON.parse(json_student);
+		document.write(origin_student.name + "<br>"); // parse 값은 배열에서 딱 1개만 뽑아 쓸 수 있다
+		document.write(origin_student.grade + "<br>"); 
+		
+	</script>
+
+</body>
+</html>

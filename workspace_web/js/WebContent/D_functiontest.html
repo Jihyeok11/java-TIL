@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	/* 1.
+	function f1() {
+		alert("A")
+		
+	}
+	
+	f1(); 
+	
+	function f1() {
+		alert("B")
+	}
+	*/
+	
+	/*
+	// 자바스크립트는 모든 코드를 읽기 전에 선언적 함수를 먼저 읽으므로 뒤에 있는 f1을 읽게 된다
+	var f1 = function(){ // 주석도 나오네
+		alert('C')
+		return 10;
+	} 
+	
+	function f1(){
+		alert("A")
+	}
+	
+	function f1(){
+		alert("B")
+	}
+	f1(); 
+
+	alert(f1); // f1함수 코드 내용을 출력하라
+	alert(f1()); // f1을 실행하고 리턴값을 출력
+	*/
+	
+	function manytimes(f,n){
+		for (var i = 1; i<=n; i++){
+			f("그다음!")
+		}
+	}
+	function tentimes(f){
+		for (var i = 1; i<=10; i++){
+			f("자바스크립트");
+		} 
+	}
+	
+	function print(message){
+		document.write("<h3>"+message+"</h3>")
+	}
+	
+	tentimes(print);
+	manytimes(print,3);
+	
+	var a = "전역";
+	
+	 
+	function vartest(){
+		var a = "지역";
+		document.write(this.a)
+		var a = "변경"
+	}
+	function vartest2(){
+		var a = "지역2";
+		document.write(this.a)
+	}
+	
+	vartest(); 
+	document.write(a)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</script>
+</body>
+</html>

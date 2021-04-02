@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+.box {
+	/* display: inline-block; */
+	width: 100px;
+	height: 100px;
+	background: red;
+	color: white;
+	float: right;
+}
+
+p {
+	clear: both; /* float 속성이 남아있기 떄문에 clear를 해줘야 한다 */
+	text-shadow: /* x크기    y크기    blur크기    색상*/
+	0 0 0 0;
+}
+</style>
+<body>
+	<div class="box" id="one">One</div>
+	<div class="box" id="tow">Two</div>
+	<div class="box" id="three">Three</div>
+	<div class="box" id="four">Four</div>
+	<p>단락입니다.</p>
+	<p>단락입니다.</p>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function f1(){
+		var div_list = document.getElementsByTagName("div");
+		// alert(div_list[0].innerHTML);
+		var date = new Date();
+		div_list[0].innerHTML = date;
+
+	}
+	
+	// setTimeout(f1, 5000); // 5초 후에 1번만 f1 함수 실핸
+	setInterval(f1, 1000); // 1초마다 f1 함수 실행
+	var timer_id = setInterval(f1,1000);
+	setTimeout(function(){	}, 10000 ); 
+
+</script>
+</head>
+<body>
+
+<div>시간 출력 예정입니다</div>
+
+</body>
+</html> 
