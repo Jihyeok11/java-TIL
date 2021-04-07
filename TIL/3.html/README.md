@@ -18,3 +18,28 @@
 </script>
 ```
 
+
+
+# 21.04.06
+
+### html 파일 만들때 설정
+
+windows - preferences - web - HTML Fiels - Editor - templates - new HTML files(5) 더블클릭
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="${encoding}">
+<title>Insert title here</title>
+<script src = "jquery-3.2.1.min.js"></script>
+<script>
+$$(document).ready(function(){
+
+});//ready end
+</head>
+<body>
+${cursor}
+</body>
+</html>
+```
