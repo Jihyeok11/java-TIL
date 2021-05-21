@@ -32,12 +32,13 @@ windows - preferences - web - HTML Fiels - Editor - templates - new HTML files(5
 <head>
 <meta charset="${encoding}">
 <title>Insert title here</title>
+</head>
 <script src = "jquery-3.2.1.min.js"></script>
 <script>
 $$(document).ready(function(){
 
 });//ready end
-</head>
+</script>
 <body>
 ${cursor}
 </body>
