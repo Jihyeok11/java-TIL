@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+  <!-- mybatis db 연결정보 세팅 파일 -->
+	<!-- 1.타입 alias : 
+	mybatis.EmpVO : SQL결과 데이터 저장 
+	별명 : emp 
+	-->
+	<typeAliases>
+		<typeAlias type="test.my.project.MemberDTO" alias="member"/>
+		<typeAlias type="test.my.project.BoardDTO" alias="board"/>
+	</typeAliases> 
+	
+	
+</configuration>
+
+

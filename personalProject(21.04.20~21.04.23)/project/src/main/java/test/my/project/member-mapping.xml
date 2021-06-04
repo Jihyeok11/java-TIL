@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="project">
+
+<select id="signUp" parameterType="member">
+	<![CDATA[
+		insert into members	values (#{id},#{password},#{username},sysdate)
+	]]>
+</select>
+
+<select id="login" resultType="String">
+<![CDATA[
+	select password from members where id= #{id}
+]]>
+
+</select>
+
+<select id="idCheck" resultType="int">
+	<![CDATA[
+		SELECT count(*) FROM members WHERE id =#{id}
+	]]>
+</select>
+
+<select id="insertBoard" parameterType="board">
+	<![CDATA[
+		insert into items values (board_seq.nextval, #{item}, #{contents}, #{price}, sysdate, null)
+	]]>
+</select>
+
+<select id="getAllBoard" resultType="board">
+	<![CDATA[
+		select * from items order by sell_time desc
+	]]>
+</select>
+
+
+</mapper>
