@@ -1,0 +1,267 @@
+@charset "EUC-KR";
+html,
+body {
+    background-color: rgba(244, 238, 238, 1);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.oneProfile {
+    display: inline-block;
+    text-align: center;
+    margin: 25px;
+}
+
+
+/*프로필이미지*/
+
+.profileimage {
+    margin: 5px 0px 0px 10px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.profileimage:hover {
+    border-style: solid;
+    border-color: #f1a8bb;
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.profileList {
+    width: 100px;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0px 0px 0px 7.5px;
+    font-size: 100%;
+}
+
+
+/*검색창*/
+
+#searchbar {
+	width: 15em;
+    height: 2.5em;
+    border: 3px soild;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 1px 2px rgba(50, 50, 50, .1), 0px 2px 4px rgba(60, 60, 60, 0.1);
+}
+
+#fa-search {
+    display: block;
+    margin-left: 1em;
+    font-size: 2.4em !important;
+}
+
+#fa-search:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+
+/*id, name, hashtag 검색*/
+
+.search {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+}
+
+.search_button {
+    margin: 1em;
+    width: 8em;
+    height: 40px;
+    background-color: #F6CEEC;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0px 1px 2px rgba(50, 50, 50, .1), 0px 2px 4px rgba(60, 60, 60, 0.1);
+}
+
+.search_button:hover {
+    background-color: #f1a8bb;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+
+/*검색결과*/
+
+#messageWindow {
+    width: 100%;
+    display: block;
+	justify-content: center;
+	padding-bottom: 4vh;
+}
+
+@keyframes blink-effect {
+    10% {
+        opacity: 0.1;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    30% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    60% {
+        opacity: 0.6;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    90% {
+        opacity: 0.9;
+    }
+}
+
+.resultNone {
+    text-align: center;
+    font-size: 30px;
+    animation: blink-effect 1s;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.idSearchList {}
+
+#nameSearch {
+    display: none;
+}
+
+.nameSearchList {}
+
+#hashtagSearch {
+    display: none;
+}
+
+.hashtagSearchList {}
+
+.hashtagList {
+    margin-left: 200px;
+    font-size: 30px;
+}
+
+#goToTopBtn {
+    position: fixed;
+    top: 90%;
+    right: 5%;
+    color: #f1a8bb;
+    z-index: 9999;
+}
+
+#goToTopBtn:hover {
+    transform: scale(1.5);
+    transition: 0.2s;
+}
+
+select {
+    -webkit-appearance:none; /* 크롬 화살표 없애기 */
+    -moz-appearance:none; /* 파이어폭스 화살표 없애기 */
+    appearance:none /* 화살표 없애기 */
+}
+select {
+	text-align-last: center;
+	height: 2.5em;
+    width: 6em;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px rgb(50 50 50 / 10%), 0px 2px 4px rgb(60 60 60 / 10%);
+    margin-inline: 3vw;
+    color: rgba(0,0,0,0.4);
+}
+#spanbefore{
+	font-size:2.8646em;
+	color: rgba(38,153,251,1);
+	display: block; /* none ############################ */
+	margin-top: 0.3vh;
+} 
+#idresult{
+	font-size:2.8646em;
+	color: rgba(38,153,251,1);
+}
+#nameresult{
+	font-size:2.8646em;
+	color: rgba(38,153,251,1);
+}
+#hashtagresult{
+	font-size:2.8646em;
+	color: rgba(38,153,251,1);
+}
+#spanafter{
+	font-size:3.125em;
+	color: rgba(0,0,0,1);
+	display: block; /* none ############################ */
+	margin-top: -0.7vh;
+}
+#inputPBox{
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+	left: -3vh;
+    width: 100%;
+    margin-top: 2vh;
+}
+#searchIconBox{
+	display: inline-flex;
+	margin-top: 8px;
+}
+#main{
+	padding-top: 100px;
+}
+.resultnum{
+	font-size:2.1875em;
+	color: rgba(175,175,175,1);
+	display: block;
+}
+#resultSortPBox{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+#resultSortBox1{display: inline-flex;}
+#resultSortBox2{display: inline-flex;}
